@@ -1,0 +1,2 @@
+# ZeroBotMusic
+Discord Music Bot
