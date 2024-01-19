@@ -4,7 +4,8 @@
   "description": "discord music bot",
   "main": "src/shard.ts",
   "scripts": {
-    "start": "ts-node src/shard.ts"
+    "start": "ts-node src/shard.ts",
+    "build": "rm -rf build/* && cp -r ./src/config.json ./build/config.json && tsc"
   },
   "keywords": [
     "discord.js",
@@ -19,7 +20,7 @@
     "discord.js": "^14.14.1",
     "distube": "^4.1.1",
     "ffmpeg-static": "^5.2.0",
-    "libsodium-wrappers": "^0.7.13",
+    "sodium": "^3.0.2",
     "undici": "^6.2.1"
   },
   "devDependencies": {
